@@ -1,0 +1,30 @@
+.conference-talk {
+  @include elevated-box(1em);
+  margin-bottom: 1em;
+}
+
+.talk-conference {
+  margin-bottom: 0;
+}
+
+.talk-date {
+  margin-top: 0;
+  font-size: 0.8em;
+}
+
+.talk-title {
+  font-style: italic;
+}
+
+.talk-assets {
+  list-style: none;
+  padding-left: 0;
+}
+
+.talk-asset {
+  display: inline-block;
+  &:not(:last-child):after {
+    margin: 0.5em;
+    content: ' - ';
+  }
+}

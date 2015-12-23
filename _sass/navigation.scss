@@ -1,0 +1,19 @@
+.navigation-links {
+  margin-top: 0;
+  list-style: none;
+  padding-left: 0;
+  @media (max-width: 550px) {
+    text-align: center;
+  }
+  li {
+    font-size: 1.4;
+    margin-bottom: 0.8em;
+    @media (max-width: 550px) {
+      display: inline-block;
+      &:not(:last-child):after {
+        margin: 0.5em;
+        content: ' - ';
+      }
+    }
+  }
+}

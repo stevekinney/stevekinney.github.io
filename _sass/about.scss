@@ -1,0 +1,16 @@
+.portrait {
+  @include elevated-box(0);
+  max-width: 200px;
+  float: left;
+  margin: 0 10px 5px 0;
+  @media (max-width: 650px) {
+    float: none;
+    max-width: 100%;
+    margin: 0 0 1em 0;
+  }
+}
+
+.biography {
+  margin-top: 0;
+  font-weight: 400;
+}

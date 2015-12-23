@@ -1,0 +1,32 @@
+title: Steve Kinney
+email: hello@stevekinney.net
+description: "Steve is the Co-Director of Academics at the Turing School for Software and Design and a front-end developer in Denver, Colorado."
+url: "http://www.stevekinney.net"
+
+baseurl: ''
+permalink: /:title
+
+collections:
+  - speaking
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude: [
+  'vendor',
+  'bower.json',
+  '.bowerrc',
+  'Gemfile',
+  'Gemfile.lock',
+  'README.md',
+  'env',
+  'tmp'
+]
+
+assets:
+  root_url: '/assets'
+
+images:
+  root_url: '/assets/images'

@@ -1,0 +1,41 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import 'mixins';
+@import 'colors';
+
+@import 'normalize';
+@import 'grid';
+@import 'tomorrow';
+
+@import 'typography';
+
+@import 'header';
+@import 'footer';
+@import 'sidebar';
+@import 'navigation';
+@import 'about';
+@import 'conference-talks';
+@import 'code';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: $default-color;
+  border-bottom: 3px solid $light-blue;
+  text-decoration: none;
+  &:hover {
+    border-color: $deep-ocean;
+  }
+  &:active {
+    background-color: lighten($light-blue, 15);
+  }
+}

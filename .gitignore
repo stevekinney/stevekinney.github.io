@@ -1,0 +1,26 @@
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Application-specific files
+env
+node_modules
+bower_components
+vendor
+.sass-cache
+tmp
+_site
+debug
+build
+assets
+Gemfile.lock
+env/*
+!env/sample.sh

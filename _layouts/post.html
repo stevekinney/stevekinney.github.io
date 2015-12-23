@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="us-en">
+  <head>
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta content='{{ page.title }} - {{ site.title }}' name='title' />
+    <meta content='{{ page.title }} - {{ site.title }}' name='og:title' />
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="container">
+
+      {% include header.html %}
+
+      <section class="content">
+        {{content}}
+      </section>
+
+      {% include footer.html %}
+
+    </div>
+  </body>
+</html>

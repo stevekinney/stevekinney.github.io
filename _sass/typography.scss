@@ -1,0 +1,31 @@
+@import 'fira';
+@import 'league-gothic';
+
+$heading: 'League Gothic';
+$serif: 'Fira Sans', serif;
+$sans-serif: 'Fira Sans', sans-serif;
+$monospace: 'Fira Mono', monospace;
+
+@mixin serif-typeface {
+  font-family: $serif;
+  line-height: 1.8em;
+  font-weight: 300;
+}
+
+@mixin sans-serif-typeface {
+  font-family: $sans-serif;
+  font-weight: 400;
+}
+
+body, input {
+  @include serif-typeface;
+  color: $default-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include sans-serif-typeface;
+}
+
+code {
+  font-family: $monospace;
+}
