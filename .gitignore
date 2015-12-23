@@ -20,7 +20,6 @@ tmp
 _site
 debug
 build
-assets
 Gemfile.lock
 env/*
 !env/sample.sh
